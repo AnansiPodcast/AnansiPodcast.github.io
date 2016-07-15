@@ -1,5 +1,5 @@
 var updateChannel = 'beta'
-  , infoURL = 'http://anansi-podcast.herokuapp.com/latest/'+updateChannel+'/info'
+  , infoURL = 'https://anansi-podcast.herokuapp.com/latest/'+updateChannel+'/info'
   , homeContainer = $('#home-container')
   , menu = $('.main-menu')
   , buttonLabelTemplate = 'Anansi Desktop ${version} ' + updateChannel
