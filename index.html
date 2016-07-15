@@ -3,12 +3,18 @@ layout: default
 title: Anansi
 ---
 
+{% include home-heading.html %}
 
-<h1>{{ page.title }}</h1>
+<div id="home-container">
+  <h3>Anansi presents a minimalist way to listen to podcasts</h3>
+  <p>With focus in listenig, Anansi brings a very simple way to listen to podcasts for those who wants just to enjoy his podcasts. Without need to opening iTunes and with a minimalistc approach, Anansi focus in the experience.</p>
 
-{% for post in site.posts %}
+  <div class="button-container">
+    <button>Download</button><br />
+    <small>Anansi Desktop 0.1.0 Beta</small>
+  </div>
 
-    {{ post.date | date: "%B %e, %Y" }}
-    <a href="{{ post.url }}">{{ post.title }}</a>
+  <p>Anansi is in open beta. Found a bug? Report here.</p>
+</div>
 
-{% endfor %}
+{% include footer.html %}

@@ -1,0 +1,18 @@
+---
+---
+/** Variables */
+$defaultBackground: #fafafa;
+$mainBackground: #bee368;
+$darkenBackgroundColor: #708f28;
+$mainFontColor: #666;
+$contrastFontColor: #fff;
+
+$bodyFont: 'Roboto', sans-serif;
+$headingFont: 'Slabo 13px', serif;
+
+/** Imports */
+@import "base";
+@import "layout";
+@import "_modules/menu";
+@import "_modules/heading";
+@import "_modules/footer";

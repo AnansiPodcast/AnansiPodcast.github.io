@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $bodyFont;
+  color: $mainFontColor;
+  background: $defaultBackground;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $headingFont;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  color: $darkenBackgroundColor;
+  text-decoration: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 0
+  }
+}

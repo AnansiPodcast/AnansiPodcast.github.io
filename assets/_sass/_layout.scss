@@ -1,0 +1,29 @@
+#home-container {
+  text-align:center;
+  padding-top:44px;
+
+  p {
+    width: 760px;
+    margin: 0 auto;
+    margin-top:25px;
+  }
+
+  .button-container {
+    padding-top:40px;
+    button {
+      background: $mainBackground;
+      color: $darkenBackgroundColor;
+      border: 1px solid $darkenBackgroundColor;
+      font-size:32px;
+      display:inline-block;
+      border-radius: 10px;
+      cursor: pointer;
+      width:320px;
+      height:78px;
+    }
+    small {
+      font-style: italic;
+    }
+  }
+
+}
