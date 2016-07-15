@@ -27,3 +27,32 @@
   }
 
 }
+
+.common-container {
+  width: $containerWidth;
+  margin: 0 auto;
+  padding-top: 50px;
+  h1, h2, h3, h4, h5 {
+    color: $headingColor;
+    a {
+      color: $headingColor;
+    }
+  }
+
+  p {
+    color: #2f2f2f;
+    padding:10px 0;
+    line-height: 150%;
+  }
+
+  .meta {
+    font-size: 14px;
+    color: #7a7a7a;
+    padding: 0;
+  }
+
+  .pagination {
+    margin-top: 80px;
+  }
+
+}

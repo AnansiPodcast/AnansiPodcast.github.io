@@ -1,9 +1,14 @@
 var updateChannel = 'beta'
   , infoURL = 'http://anansi-podcast.herokuapp.com/latest/'+updateChannel+'/info'
   , homeContainer = $('#home-container')
+  , menu = $('.main-menu')
   , buttonLabelTemplate = 'Anansi Desktop ${version} ' + updateChannel
   , downloadPath
   , buttonContainer
+
+function activePage(page) {
+  menu.find('li[rel="'+page+'"]').addClass('active')
+}
 
 if(homeContainer.length) {
   buttonContainer = homeContainer.find('.button-container')
@@ -15,3 +20,6 @@ if(homeContainer.length) {
     location.href = downloadPath
   })
 }
+
+menu.find('li').removeClass('active')
+if(location.href.indexOf('blog') > -1) activePage('blog')

@@ -3,6 +3,17 @@
   h1, h2, h3, h4, h5 {
     color: $contrastFontColor;
   }
+  h1 {
+    font-family: $bodyFont;
+    font-weight: 500;
+    font-size: 42px;
+  }
+  a {
+    color: $contrastFontColor;
+    &:hover {
+      color:$darkenBackgroundColor;
+    }
+  }
 }
 
 #main-header {
@@ -11,8 +22,6 @@
   text-align:center;
   h1 {
     text-align: center;
-    font-family: $bodyFont;
-    font-weight: 500;
     font-size: 124px;
     line-height: 0.7em;
     small {
@@ -24,4 +33,14 @@
     position:relative;
     top: 4px;
   }
+}
+
+#common-header {
+  @include heading;
+  h1 {
+    width: $containerWidth;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  height: 71px;
 }
